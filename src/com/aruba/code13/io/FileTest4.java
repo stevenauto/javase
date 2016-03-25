@@ -1,4 +1,4 @@
-package com.shengsiyuan.io;
+package com.aruba.code13.io;
 
 import java.io.File;
 
@@ -6,9 +6,9 @@ public class FileTest4
 {
 	public static void main(String[] args)
 	{
-		File file = new File("C:/jakarta-jmeter-2.4");
+		File file = new File("e:/version");
 		
-//		String[] names = file.list();
+//		String[] names = file.list();与listFiles返回值一样，都是这个文件夹下的文件和目录。
 //		
 //		for(String name : names)
 //		{
@@ -19,7 +19,7 @@ public class FileTest4
 		
 		for(File f : files)
 		{
-			//System.out.println(f.getName());
+			System.out.println(f.getName());
 			System.out.println(f.getParent());
 		}
 		

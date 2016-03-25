@@ -1,4 +1,4 @@
-package com.shengsiyuan.io;
+package com.aruba.code13.io;
 
 import java.io.File;
 
@@ -6,6 +6,9 @@ public class FileTest9
 {
 	public static void deleteAll(File file)
 	{
+		/**file.list()нд╪Ч╪пн╙©у
+		 * 
+		 */
 		if(file.isFile() || file.list().length == 0)
 		{
 			file.delete();
