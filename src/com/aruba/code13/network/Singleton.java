@@ -1,4 +1,4 @@
-package com.shengsiyuan.network;
+package com.aruba.code13.network;
 
 public class Singleton
 {

@@ -1,4 +1,4 @@
-package com.shengsiyuan.network;
+package com.aruba.code13.network;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -18,7 +18,7 @@ public class UdpTest1
 		socket.send(packet);
 		
 		byte[] buffer = new byte[1000];
-		
+		//先构造一个空的字节数组，接收到数据后用这些内容填充这个空数组。
 		DatagramPacket packet2 = new DatagramPacket(buffer,100);
 		
 		socket.receive(packet2);

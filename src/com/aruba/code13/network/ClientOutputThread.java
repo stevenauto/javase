@@ -1,4 +1,4 @@
-package com.shengsiyuan.network;
+package com.aruba.code13.network;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,7 +26,7 @@ public class ClientOutputThread extends Thread
 			{
 				BufferedReader reader = new BufferedReader(
 						new InputStreamReader(System.in));
-
+				//如果读不到内容就一直等着，是阻塞的
 				String line = reader.readLine();
 
 				os.write(line.getBytes());

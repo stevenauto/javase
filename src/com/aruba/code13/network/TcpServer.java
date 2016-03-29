@@ -1,4 +1,4 @@
-package com.shengsiyuan.network;
+package com.aruba.code13.network;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -10,7 +10,7 @@ public class TcpServer
 	public static void main(String[] args) throws Exception
 	{
 		ServerSocket ss = new ServerSocket(5000);
-		
+		//受阻塞的方法，客户端连接后继续执行。
 		Socket socket = ss.accept();
 		
 		InputStream is = socket.getInputStream();
