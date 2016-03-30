@@ -9,7 +9,7 @@ public class MainServer
 {
 	public static void main(String[] args) throws Exception
 	{
-		ServerSocket ss = new ServerSocket(8000);
+		ServerSocket ss = new ServerSocket(5000);
 		
 		while(true){
 			Socket socket = ss.accept();

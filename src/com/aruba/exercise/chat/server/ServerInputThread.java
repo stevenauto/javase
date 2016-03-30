@@ -16,11 +16,14 @@ public class ServerInputThread extends Thread
 	{
 		try{
 			InputStream is = socket.getInputStream();
-			byte[] buffer = new byte[200];
-			int length=0;	
-			length=is.read(buffer);
-			String str = new String(buffer,0,length);
-			System.out.println(str);
+			while(true){
+				byte[] buffer = new byte[200];
+				int length=0;	
+				length=is.read(buffer);
+				String str = new String(buffer,0,length);
+				System.out.println(str);
+			}
+			
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{

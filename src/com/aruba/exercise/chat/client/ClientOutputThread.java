@@ -1,6 +1,7 @@
 package com.aruba.exercise.chat.client;
 
-import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 
@@ -17,10 +18,9 @@ public class ClientOutputThread extends Thread
 		try{
 			OutputStream os = socket.getOutputStream();
 			while(true){
-				BufferedInputStream bi = new BufferedInputStream(System.in);
-				byte[] buffer = new byte[200];
-				int length = bi.read(buffer);
-				os.write(buffer);
+				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+				String str=br.readLine();
+				os.write(str.getBytes());
 			}
 			
 		}catch(Exception e){

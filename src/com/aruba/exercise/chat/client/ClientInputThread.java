@@ -18,10 +18,14 @@ public class ClientInputThread extends Thread
 	{
 		try{
 			InputStream is = socket.getInputStream();
-			BufferedInputStream bi = new BufferedInputStream(is);
-			byte[] buffer = new byte[200];
-			int length = bi.read(buffer);
-			System.out.print(new String(buffer, 0, length));
+			
+			while(true){
+				byte[] buffer = new byte[1024];
+				int length = is.read(buffer);
+				System.out.print(new String(buffer, 0, length));
+
+			}
+		
 		}catch(Exception e){
 			e.printStackTrace();
 		}
