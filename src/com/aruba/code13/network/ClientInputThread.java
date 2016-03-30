@@ -11,6 +11,7 @@ public class ClientInputThread extends Thread
 	public ClientInputThread(Socket socket)
 	{
 		this.socket = socket;
+		
 	}
 	
 	@Override
