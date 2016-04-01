@@ -152,7 +152,7 @@ public class Server extends JFrame
 		jPanel1.add(jButton);
 
 		jTextArea.setEditable(false); //不允许用户手动修改在线用户列表
-		jTextArea.setRows(20);
+		jTextArea.setRows(30);
 		jTextArea.setColumns(30);
 		jTextArea.setForeground(new Color(0, 51, 204));
 
