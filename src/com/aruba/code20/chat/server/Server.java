@@ -18,10 +18,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
 import com.aruba.code20.chat.util.XMLUtil;
-
-
 public class Server extends JFrame
 {
 	private JLabel jLabel1;
