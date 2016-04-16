@@ -80,7 +80,7 @@ public class ServerConnection extends Thread
 				
 				String xml = XMLUtil.constructLoginResultXML(loginResult);
 				
-				os.write(xml.getBytes());
+				os.write(xml.getBytes());//send to client
 				
 				// 如果用户登录成功，启动线程
 				if(isLogin)

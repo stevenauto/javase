@@ -6,10 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import org.dom4j.Document;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
+
 
 /**
  * login : 1
@@ -52,7 +49,9 @@ public class XMLUtil
 		
 		Element user = root.addElement("user");
 		user.setText(username);
-		
+		/**将xml保存成字符串，不能用toString用asXML。
+		 * 
+		 */
 		return document.asXML();
 	}
 	
