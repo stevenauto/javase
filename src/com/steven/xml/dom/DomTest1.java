@@ -26,7 +26,8 @@ public class DomTest1
 		 * @author root
 		 *	class name:com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl
 		 */
-	
+
+
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		
 //		System.out.println("class name: " + db.getClass().getName());

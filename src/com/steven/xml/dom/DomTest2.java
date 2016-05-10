@@ -20,10 +20,9 @@ public class DomTest2
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		
 		Document doc = db.parse(new File("student.xml"));
-		
-		System.out.println(doc.getXmlEncoding());
-		System.out.println(doc.getXmlVersion());
-		System.out.println(doc.getXmlStandalone());
+//		System.out.println(doc.getXmlEncoding());
+//		System.out.println(doc.getXmlVersion());
+//		System.out.println(doc.getXmlStandalone());
 		
 		//获得文档的根元素节点
 		Element root = doc.getDocumentElement();
@@ -40,6 +39,7 @@ public class DomTest2
 			学生
 			#text
 		  */
+		
 		NodeList list = root.getChildNodes();
 		
 		System.out.println(list.getLength());
@@ -74,7 +74,8 @@ public class DomTest2
 		for(int i = 0; i < nodeList.getLength(); i++)
 		{
 			NamedNodeMap nnm = nodeList.item(i).getAttributes();
-			//Attr是从node衍生来的，所以可以用getNodeName
+			
+
 			String attrName = nnm.item(0).getNodeName();
 			System.out.print(attrName);
 			
