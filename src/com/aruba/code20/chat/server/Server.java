@@ -18,8 +18,20 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-
 import com.aruba.code20.chat.util.XMLUtil;
+
+/**整个的顺序：1 客户端连到server端的ServerConnection，连接成功，服务器会启动
+ * ServerMessageThread（ServerConnection的子线程）由它跟客户端通信。每个
+ * ServerMessageThread对应一个client，客户和服务器之间的所有通信都是在这二个线程间。
+ * 2 对于客户端和服务器的二个线程来说，run方法最开始都是在read阻塞，等待对方发送数据。
+ * 3除了run方法外，二边都定义了sendMessage方法来发送数据借助output输出流，对方都是用run方法
+ * 来接收。
+ * 
+ * 
+ * @author aruba
+ *
+ */
+
 /**整个的顺序：1 客户端连到server端的ServerConnection，连接成功，服务器会启动
  * ServerMessageThread（ServerConnection的子线程）由它跟客户端通信。每个
  * ServerMessageThread对应一个client，客户和服务器之间的所有通信都是在这二个线程间。
