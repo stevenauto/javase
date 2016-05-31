@@ -23,19 +23,19 @@ public class Test2
 		Element root = doc.getRootElement();
 		
 		System.out.println("root element: " + root.getName());
-		
+		//获得根元素下面所有的子元素，空白不是子元素，所以下列list中不包括空白。
 		List childList = root.elements();
 		
 		System.out.println(childList.size());
-		
+		//返回所有元素名是hello的元素
 		List childList2 = root.elements("hello");
 		
 		System.out.println(childList2.size());
-		
+		//返回第一个元素名是hello的元素
 		Element first = root.element("hello");
 		
 		System.out.println(first.attributeValue("age"));
-		
+		//获得子元素的迭代elementIterator()
 		for(Iterator iter = root.elementIterator(); iter.hasNext();)
 		{
 			Element e = (Element)iter.next();
@@ -47,6 +47,9 @@ public class Test2
 		
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
+		/**在一个文件中使用了二个名字相同的类document但是位于不同的包下面
+		 * 这时你必须制定包的全名org.w3c.dom.Document
+		 */
 		org.w3c.dom.Document document = db.parse(new File("student2.xml"));
 		
 		DOMReader domReader = new DOMReader();

@@ -42,7 +42,7 @@ public class JDomTest1
 
 		
 		Format format = Format.getPrettyFormat();
-		
+		//缺省的是空二个格，
 		format.setIndent("    ");
 //		format.setEncoding("gbk");
 		

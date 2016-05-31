@@ -43,9 +43,12 @@ public class Test1
 		xmlWriter2.write(document);
 		
 		XMLWriter xmlWriter3 = new XMLWriter(new FileWriter("student3.xml"), format);
-		
+		/**xmlWriter3.flush()或者close必须加 字节流不需要刷新，字符流需要刷新
+		 * 不刷新就存不到数据库中。
+		 */
 		xmlWriter3.write(document);
 		xmlWriter3.close();
+
 
 	}
 }
