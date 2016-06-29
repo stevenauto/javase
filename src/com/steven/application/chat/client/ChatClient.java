@@ -1,4 +1,4 @@
-package com.aruba.code20.chat.client;
+package com.steven.application.chat.client;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;

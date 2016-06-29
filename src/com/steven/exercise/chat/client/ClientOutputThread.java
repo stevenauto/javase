@@ -1,4 +1,4 @@
-package com.aruba.exercise.chat.client;
+package com.steven.exercise.chat.client;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

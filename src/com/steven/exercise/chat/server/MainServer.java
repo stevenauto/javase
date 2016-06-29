@@ -1,4 +1,4 @@
-package com.aruba.exercise.chat.server;
+package com.steven.exercise.chat.server;
 
 import java.io.InputStream;
 import java.io.OutputStream;

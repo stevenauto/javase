@@ -1,4 +1,4 @@
-package com.aruba.code20.chat.server;
+package com.steven.application.chat.server;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -7,8 +7,8 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-import com.aruba.code20.chat.util.CharacterUtil;
-import com.aruba.code20.chat.util.XMLUtil;
+import com.steven.application.chat.util.CharacterUtil;
+import com.steven.application.chat.util.XMLUtil;
 
 public class ServerMessageThread extends Thread
 {

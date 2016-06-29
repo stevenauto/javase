@@ -1,4 +1,4 @@
-package com.aruba.code20.chat.server;
+package com.steven.application.chat.server;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -7,7 +7,7 @@ import java.net.Socket;
 
 import javax.swing.JOptionPane;
 
-import com.aruba.code20.chat.util.XMLUtil;
+import com.steven.application.chat.util.XMLUtil;
 
 public class ServerConnection extends Thread
 {

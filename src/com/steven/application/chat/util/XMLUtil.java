@@ -1,4 +1,4 @@
-package com.aruba.code20.chat.util;
+package com.steven.application.chat.util;
 
 import java.io.StringReader;
 import java.util.ArrayList;
