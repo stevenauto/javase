@@ -55,6 +55,16 @@ public class Server extends JFrame
 	
 	private Map<String, ServerMessageThread> map = new HashMap<String, ServerMessageThread>();
 	
+	private ServerConnection serverconnection;
+	
+	public ServerConnection getServerconnection() {
+		return serverconnection;
+	}
+
+	public void setServerconnection(ServerConnection serverconnection) {
+		this.serverconnection = serverconnection;
+	}
+
 	public Server(String name)
 	{
 		super(name);
@@ -184,8 +194,17 @@ public class Server extends JFrame
 	private void execute(ActionEvent evt)
 	{
 		int port = Integer.parseInt(this.getJTextField().getText());
+		if("启动服务器".equals(this.getJButton().getText())){
+			this.serverconnection=new ServerConnection(this,port);
+		    this.serverconnection.start();
+		    System.out.println("11"+"停止服务器".equals(this.getJButton().getText()));
+		}else if("停止服务器".equals(this.getJButton().getText())){
+			System.out.println(this.serverconnection);
+			System.out.println("22"+"停止服务器".equals(this.getJButton().getText()));
+		}
 		
-		new ServerConnection(this, port).start();
+
+		
 	}
 
 	public static void main(String[] args)

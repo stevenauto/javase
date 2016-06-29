@@ -191,6 +191,25 @@ public class ClientConnection extends Thread
 						System.exit(0);//退出客户端程序
 					}
 				}
+				
+				// 服务器停止运行
+				else if(type == CharacterUtil.STOP_SERVER)
+				{
+					try
+					{
+						this.getSocket().getInputStream().close();
+						this.getSocket().getOutputStream().close();
+						this.getSocket().close();
+					}
+					catch(Exception ex)
+					{
+						
+					}
+					finally
+					{
+						System.exit(0);//退出客户端程序
+					}
+				}
 			}
 		}
 		catch(Exception ex)

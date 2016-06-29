@@ -6,6 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
 
 
 /**
@@ -308,6 +312,23 @@ public class XMLUtil
 		return result;
 	}
 	
+	/**
+	 * 构造服务器端停止的XML信息
+	 */
+	
+	public static String constructStopXML()
+	{
+		Document document = constructDocument();
+		Element root = document.getRootElement();
+		
+		Element type = root.addElement("type");
+		type.setText("8");
+		
+		
+		return document.asXML();
+	}
+	
+
 }
 
 

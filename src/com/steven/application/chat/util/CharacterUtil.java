@@ -15,4 +15,6 @@ public class CharacterUtil
 	public static final int CLOSE_SERVER_WINDOW = 6;
 	
 	public static final int CLOSE_CLIENT_WINDOW_CONFIRMATION = 7;
+	
+	public static final int STOP_SERVER = 8;
 }
