@@ -6,17 +6,18 @@ public class SetTest2
 {
 	public static void main(String[] args)
 	{
+/*		HashSet set = new HashSet();
+		
+		set.add(new People("zhangsan"));
+		set.add(new People("lisi"));
+		set.add(new People("zhangsan"));
+		
+		People p1 = new People("zhangsan");
+		
+		set.add(p1);
+		set.add(p1);
+		System.out.println(set);*/
 		HashSet set = new HashSet();
-		
-//		set.add(new People("zhangsan"));
-//		set.add(new People("lisi"));
-//		set.add(new People("zhangsan"));
-		
-//		People p1 = new People("zhangsan");
-//		
-//		set.add(p1);
-//		set.add(p1);
-		
 		String s1 = new String("a");
 		String s2 = new String("a");
 		
