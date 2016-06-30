@@ -5,8 +5,8 @@ package com.steven.code8.jdk5;
  * 
  * 
  */
-import static com.aruba.code8.common.Common.AGE;
-import static com.aruba.code8.common.Common.output;
+import static com.steven.code8.common.Common.AGE;
+import static com.steven.code8.common.Common.output;
 
 public class StaticImportTest
 {
