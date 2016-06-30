@@ -1,4 +1,4 @@
-package com.aruba.code13.io;
+package com.steven.code13.io;
 
 import java.io.File;
 
@@ -6,7 +6,7 @@ public class FileTest4
 {
 	public static void main(String[] args)
 	{
-		File file = new File("e:/version");
+		File file = new File("e:/cvs");
 		
 //		String[] names = file.list();与listFiles返回值一样，都是这个文件夹下的文件和目录。
 //		
