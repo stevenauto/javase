@@ -21,7 +21,7 @@ class Child2 extends Parent2
 }
 
 
-public class Test5
+public class Test5dddddddddd
 {
 	static
 	{
