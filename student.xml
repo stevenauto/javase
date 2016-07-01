@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<学生名册 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Course30\student.xsd">
+<学生名册 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="C:\Course30\student.xsd">
 	<学生 学号="1">
 		<姓名>张三</姓名>
 		<性别>男</性别>

@@ -1,4 +1,4 @@
-package com.aruba.code13.thread;
+package com.steven.code13.thread;
 
 public class FetchMoney
 {
@@ -67,7 +67,7 @@ class MoneyThread extends Thread
 	@Override
 	public void run()
 	{
-		System.out.println(bank.getMoney(800));
+		System.out.println(bank.getMoney(80));
 	}
 }
 

@@ -1,4 +1,4 @@
-package com.aruba.code13.network;
+package com.steven.network.udp;
 
 public class Singleton
 {
