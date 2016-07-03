@@ -28,7 +28,7 @@ public class Test6
 	public static void main(String[] args)
 	{
 		/**Child3没有被初始化，只有当程序访问的静态变量或静态方法确实在当前
-		 * 类或当前接口中定义是，才可以认为是对类或者接口的主动使用。因为a和doSomething不在
+		 * 类或当前接口中定义时，才可以认为是对类或者接口的主动使用。因为a和doSomething不在
 		 * Child3中定义所以没有初始化a
 		 * 
 		 */

@@ -1,4 +1,4 @@
-package com.shengsiyuan.chat.util;
+package test.com.steven.chat.util;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +9,8 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.steven.application.chat.util.XMLUtil;
 
 public class XMLUtilTest
 {

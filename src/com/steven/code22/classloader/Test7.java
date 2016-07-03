@@ -19,11 +19,11 @@ public class Test7
 		 */
 		ClassLoader loader = ClassLoader.getSystemClassLoader();
 		
-		Class<?> clazz = loader.loadClass("com.aruba.code22.classloader.CL");
+		Class<?> clazz = loader.loadClass("com.steven.code22.classloader.CL");
 		
 		System.out.println("----------------------------");
 		
-		clazz = Class.forName("com.aruba.code22.classloader.CL");
+		clazz = Class.forName("com.steven.code22.classloader.CL");
 	}
 
 }

@@ -1,4 +1,4 @@
-package inc.aruba.Jython;
+package inc.steven.Jython;
 
 public interface EmployeeType {
 	  public String getEmployeeFirst();
