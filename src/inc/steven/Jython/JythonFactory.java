@@ -22,10 +22,14 @@ public class JythonFactory {
         String instanceName = tempName.toLowerCase();
         String javaClassName = tempName.substring(0, 1).toUpperCase() + tempName.substring(1);
         String objectDef = "=" + javaClassName + "()";
+        System.out.println("instanceName is:"+instanceName+"!");
+        System.out.println("objectDef is:"+objectDef+"!");
         interpreter.exec(instanceName + objectDef);
+      
         try {
             Class JavaInterface = Class.forName(interfaceName);
             javaObject = interpreter.get(instanceName).__tojava__(JavaInterface);
+            System.out.println("javaObject is:"+javaObject+"!");
         } catch (ClassNotFoundException ex) {
             ex.printStackTrace(); // Add logging here
         }

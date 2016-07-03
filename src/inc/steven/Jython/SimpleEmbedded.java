@@ -19,11 +19,11 @@ public class SimpleEmbedded {
 	        System.out.println("Employee ID = "+pyObject.invoke("getEmployeeId"));
 	        System.out.println("Modify Employee id");
 	        pyObject.invoke("setEmployeeId",new PyString("1999"));
-	        System.out.println("Employee ID = "+pyObject.invoke("getEmployeeId")+"after modified");
+	        System.out.println("after modified"+"Employee ID = "+pyObject.invoke("getEmployeeId"));
 	        
 	        // Jython Function
 	        PyFunction pyFunction = JythonFactory.getInstance().getPyFunctionFromJythonFile("getNunmberValue", "C:/Users/root/workspace/javase/Employee.py");
-	        System.out.println("***="+pyFunction.__call__(new PyInteger(10)));
+	        System.out.println("***="+pyFunction.__call__(new PyInteger(1999)));
 	        
 	    }
 
