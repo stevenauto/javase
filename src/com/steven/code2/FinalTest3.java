@@ -7,7 +7,7 @@ public class FinalTest3
 		People people = new People();
 		// people.age = 20;
 
-		// people.address = new Address();
+		//people.address = new Address();
 
 		people.address.name = "shanghai";
 
@@ -16,7 +16,7 @@ public class FinalTest3
 
 class People
 {
-	// final int age = 10;
+	final int age = 10;
 	final Address address = new Address();
 }
 

@@ -1,6 +1,6 @@
 package com.steven.code2;
 
-public class Test2
+public class AbstractTest2
 {
 	public static void main(String[] args)
 	{

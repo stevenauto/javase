@@ -16,7 +16,7 @@ public class PolyTest5
 	public static void main(String[] args)
 	{
 
-		PolyTest5 test = new PolyTest5();
+/*		PolyTest5 test = new PolyTest5();
 
 		BMW bmw = new BMW();
 
@@ -24,19 +24,19 @@ public class PolyTest5
 
 		QQ qq = new QQ();
 
-		test.run(qq);
+		test.run(qq);*/
 
-		/*
-		 * PolyTest5 test = new PolyTest5();
-		 * 
-		 * Car car = new BMW();
-		 * 
-		 * test.run(car);
-		 * 
-		 * QQ qq = new QQ();
-		 * 
-		 * test.run(qq);
-		 */
+		
+		PolyTest5 test = new PolyTest5();
+		 
+		Car car = new BMW();
+		 
+		test.run(car);
+		
+		QQ qq = new QQ();
+		
+		test.run(qq);
+		
 
 	}
 }

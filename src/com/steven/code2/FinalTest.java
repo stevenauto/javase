@@ -8,7 +8,7 @@ public class FinalTest
 	}
 }
 
-final class E // 该类不能被继承
+final class E // final该类不能被继承
 {
 
 }

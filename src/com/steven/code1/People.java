@@ -24,30 +24,30 @@ public class People
 	public static void main(String[] args)
 	{
 		
-/*		People people = new People();
+		People people = new People();
 
 		int a = 0;
 
 		people.change(people.age);
 
-		System.out.println(people.age);*/
+		System.out.println(people.age);
 
 		
 
-		/*
+		
 
-		People people = new People();
+	/*	People people = new People();
 
 		people.change2(people);
 
-		System.out.println(people.age);*/
-		
-
-		People people = new People();
-		
-		people.change3(people, people.age);
-
 		System.out.println(people.age);
+		*/
+
+//		People people = new People();
+//		
+//		people.change3(people, people.age);
+//
+//		System.out.println(people.age);
 
 
 	}

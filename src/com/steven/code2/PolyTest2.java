@@ -32,7 +32,7 @@ public class PolyTest2
 
 		animal.sing();
 
-		// 向下类型转换
+		// 向下类型转换(Cat) a;
 		Animal a = new Cat();
 
 		Cat c = (Cat) a;

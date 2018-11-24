@@ -9,7 +9,9 @@ public class ReturnTest
 			System.out.println(++a);
 			return;
 		}
-		
+		/*
+		 * return后不执行下一句
+		 */
 		System.out.println(++a);	
 		
 	}

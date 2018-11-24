@@ -13,4 +13,9 @@ public class FinalTest4
 	{
 		this.a = a;
 	}
+	public static void main(String [] args){
+		
+		FinalTest4 f4 = new FinalTest4();
+		System.out.println(f4.a);
+	}
 }

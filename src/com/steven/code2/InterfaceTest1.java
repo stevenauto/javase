@@ -1,6 +1,6 @@
 package com.steven.code2;
 
-public class Test3
+public class InterfaceTest1
 {
 	public static void main(String[] args)
 	{

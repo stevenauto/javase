@@ -11,6 +11,9 @@ public class FinalTest2
 
 class G
 {
+	/*
+	 * final类的方法不能重写
+	 */
 	public final void output()
 	{
 		System.out.println("G");
