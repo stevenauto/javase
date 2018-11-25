@@ -13,7 +13,7 @@ public class ObjectTest
 		System.out.println(str);
 		System.out.println(str.toString());
 
-		Student student = new Student();
+		Students student = new Students();
 
 		System.out.println(student);
 		System.out.println(student.toString());
@@ -21,7 +21,7 @@ public class ObjectTest
 	}
 }
 
-class Student extends Object
+class Students extends Object
 {
 	public String toString()
 	{

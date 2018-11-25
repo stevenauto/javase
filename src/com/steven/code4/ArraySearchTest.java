@@ -73,8 +73,8 @@ public class ArraySearchTest
 
 		int[] b = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-		int index2 = binarySearch(b , 10);
+		int index2 = binarySearch(b , 5);
 
-		System.out.println(index2);
+		System.out.println("The index is:"+index2);
 	}
 }

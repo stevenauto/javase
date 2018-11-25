@@ -13,7 +13,7 @@ public class SingletonTest
 
 class Singleton
 {
-	private static Singleton singleton;
+	private static Singleton singleton = null;
 	
 	private Singleton()
 	{
@@ -24,7 +24,13 @@ class Singleton
 	{
 		if(singleton == null)
 		{
-			singleton = new Singleton();
+			synchronized(Singleton.class){
+				if(singleton == null){
+					singleton = new Singleton();
+				}
+				
+			}
+			
 		}
 
 		return singleton;
