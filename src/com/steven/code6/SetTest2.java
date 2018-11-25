@@ -22,7 +22,7 @@ public class SetTest2
 		String s2 = new String("a");
 		
 		System.out.println("hash code: " + (s1.hashCode() == s2.hashCode()));
-		
+		System.out.println("ref address: " + (s1 == s2));
 		set.add(s1);
 		set.add(s2);
 		

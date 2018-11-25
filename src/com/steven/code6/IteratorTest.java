@@ -3,7 +3,7 @@ package com.steven.code6;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class InteratorTest
+public class IteratorTest
 {
 	public static void main(String[] args)
 	{
