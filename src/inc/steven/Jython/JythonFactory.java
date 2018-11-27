@@ -15,7 +15,7 @@ public class JythonFactory {
         Object javaObject = null;
         
         PythonInterpreter interpreter = cacheInterpreter(pathToJythonModule);
-        
+        //pathToJythonModule C:/Users/root/workspace/javase/Employee.py
         String tempName = pathToJythonModule.substring(pathToJythonModule.lastIndexOf("/") + 1);
         tempName = tempName.substring(0, tempName.indexOf("."));
         System.out.println("The Python Class Name is:"+tempName+"!");
@@ -24,6 +24,7 @@ public class JythonFactory {
         String objectDef = "=" + javaClassName + "()";
         System.out.println("instanceName is:"+instanceName+"!");
         System.out.println("objectDef is:"+objectDef+"!");
+        //employee=Employee()
         interpreter.exec(instanceName + objectDef);
       
         try {

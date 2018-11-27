@@ -34,24 +34,5 @@ public class MyReflection
 			System.out.println(annotation.annotationType().getName());
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

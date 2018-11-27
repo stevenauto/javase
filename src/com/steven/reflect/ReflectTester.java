@@ -1,4 +1,4 @@
-package com.steven.code8.reflect;
+package com.steven.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
