@@ -51,17 +51,7 @@ public class InvokeTester
 		
 		System.out.println((String)result2);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 
 	}
 }

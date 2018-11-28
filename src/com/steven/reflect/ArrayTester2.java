@@ -32,8 +32,8 @@ public class ArrayTester2
 
 		System.out.println(arrayCast[3][5][10]);
 
-		// System.out.println(Integer.TYPE);
-		// System.out.println(Integer.class);
+		System.out.println(Integer.TYPE);
+		System.out.println(Integer.class);
 
 	}
 }
