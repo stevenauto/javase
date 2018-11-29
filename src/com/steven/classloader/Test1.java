@@ -11,7 +11,7 @@ public class Test1
 		
 		System.out.println(clazz.getClassLoader());
 		
-		Class clazz2 = Class.forName("com.steven.code22.classloader.C");
+		Class clazz2 = Class.forName("com.steven.classloader.C");
 		
 		System.out.println(clazz2.getClassLoader());
 	}
