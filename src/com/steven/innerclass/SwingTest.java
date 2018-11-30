@@ -45,24 +45,3 @@ public class SwingTest
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

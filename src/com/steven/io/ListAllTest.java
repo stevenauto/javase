@@ -94,7 +94,7 @@ public class ListAllTest
 	
 	public static void main(String[] args)
 	{
-		File file = new File("E:\\node\\out");
+		File file = new File("E:\\backup\\10dev");
 		
 		deepList(file);
 	}

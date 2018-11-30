@@ -33,22 +33,5 @@ public class UrlConnectionStream
 		is.close();
 		os.close();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

@@ -29,23 +29,6 @@ public class LocalInnerClassTest
 		LocalInner localInner = new LocalInner();
 		
 		localInner.doSomething();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 }

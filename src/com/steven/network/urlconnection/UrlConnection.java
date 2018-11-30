@@ -30,22 +30,5 @@ public class UrlConnection
 		is.close();
 		os.close();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

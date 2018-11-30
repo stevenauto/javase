@@ -29,14 +29,7 @@ public class MyOwnStream1
 		}
 		
 		System.out.println();
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 }
 
@@ -56,25 +49,6 @@ class MyByteArrayInputStream extends InputStream
 	{
 		return (ptr < data.length) ? (data[ptr++]) : -1;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
 
