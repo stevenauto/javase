@@ -197,10 +197,10 @@ public class Server extends JFrame
 		if("启动服务器".equals(this.getJButton().getText())){
 			this.serverconnection=new ServerConnection(this,port);
 		    this.serverconnection.start();
-		    System.out.println("Start Server"+"启动服务器".equals(this.getJButton().getText()));
+		    System.out.println("Start Server successfully");
 		}else if("停止服务器".equals(this.getJButton().getText())){
 			System.out.println(this.serverconnection);
-			System.out.println("Stop Server"+"停止服务器".equals(this.getJButton().getText()));
+			System.out.println("Stop Server successfully");
 		}
 		
 

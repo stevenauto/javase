@@ -1,4 +1,4 @@
-package com.aruba.exercise.strategy;
+package com.steven.exercise.strategy;
 
 import java.util.Collections;
 import java.util.Comparator;

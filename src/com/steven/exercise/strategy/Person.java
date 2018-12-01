@@ -1,4 +1,4 @@
-package com.aruba.exercise.strategy;
+package com.steven.exercise.strategy;
 
 public class Person
 {
