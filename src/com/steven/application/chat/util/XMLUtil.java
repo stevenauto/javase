@@ -27,6 +27,14 @@ import org.dom4j.io.SAXReader;
 
 public class XMLUtil
 {
+	/**
+	 * 客户端登录时向服务器端发送的XML数据 
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * </message>
+	 * 
+	 * @return
+	 */
 	private static Document constructDocument()
 	{
 		Document document = DocumentHelper.createDocument();
@@ -39,7 +47,13 @@ public class XMLUtil
 	
 	
 	/**
-	 * 客户端登录时向服务器端发送的XML数据
+	 * 客户端登录时向服务器端发送的XML数据 
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>1</type>
+	 * <user>zhangsan</user>
+	 * </message>
+	 * 
 	 * @return
 	 */
 	public static String constructLoginXML(String username)
@@ -84,6 +98,13 @@ public class XMLUtil
 	
 	/**
 	 * 构造向客户端发送的在线用户列表xml数据
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>4</type>
+	 * <user>zhangsan</user>
+	 * <user>lisi</user>
+	 * <user>wangwu</user>
+	 * </message>
 	 */
 	
 	public static String constructUserList(Set<String> users)
@@ -157,7 +178,12 @@ public class XMLUtil
 	/**
 	 * 
 	 * 构造客户端向服务器端发送的聊天数据xml
-	 * 
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>2</type>
+	 * <user>zhangsan</user>
+	 * <content>chat message </content>
+	 * </message>
 	 * @param username
 	 * @param message
 	 * @return
@@ -181,7 +207,11 @@ public class XMLUtil
 	
 	/**
 	 * 构造服务器端向所有客户端发送的XML聊天数据
-	 * 
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>3</type>
+	 * <content>zhangsan: chat message </content>
+	 * </message>
 	 */
 	public static String constructServerMessageXML(String message)
 	{
@@ -225,7 +255,10 @@ public class XMLUtil
 	
 	/**
 	 * 构造服务器端窗口关闭的XML数据
-	 * 
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>6</type>
+	 * </message>
 	 */
 	public static String constructCloseServerWindowXML()
 	{
@@ -240,6 +273,12 @@ public class XMLUtil
 	
 	/**
 	 * 构造客户端窗口关闭的XML数据
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>5</type>
+	 * <user>zhangsan</user>
+	 * <content>client closed </content>
+	 * </message>
 	 */
 	public static String constructCloseClientWindowXML(String username)
 	{
@@ -257,6 +296,10 @@ public class XMLUtil
 	
 	/**
 	 * 构造服务器端确认客户端关闭的XML信息
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>7</type>
+	 * </message>
 	 */
 	
 	public static String constructCloseClientWindowConfirmationXML()
@@ -272,6 +315,11 @@ public class XMLUtil
 	
 	/**
 	 * 构造向客户端返回的登录结果XML
+	 * <?xml version="1.0" encoding="utf-8"?>
+	 * <message>
+	 * <type>8</type>
+	 * <result>zhangsan</result>
+	 * </message>
 	 */
 	public static String constructLoginResultXML(String result)
 	{
