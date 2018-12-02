@@ -1,4 +1,5 @@
-package com.steven.pattern.dynamicproxy;
+package com.steven.pattern.dynamicproxy.simple;
+
 
 public class RealSubject implements Subject
 {

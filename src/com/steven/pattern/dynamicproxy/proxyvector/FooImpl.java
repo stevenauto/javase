@@ -1,4 +1,4 @@
-package com.steven.pattern.dynamicproxy;
+package com.steven.pattern.dynamicproxy.proxyvector;
 
 public class FooImpl implements Foo
 {

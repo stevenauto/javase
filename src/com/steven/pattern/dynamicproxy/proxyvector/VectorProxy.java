@@ -1,4 +1,4 @@
-package com.steven.pattern.dynamicproxy;
+package com.steven.pattern.dynamicproxy.proxyvector;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
