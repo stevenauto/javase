@@ -1,4 +1,4 @@
-package com.steven.pattern.strategy;
+package com.steven.code6;
 
 import java.util.Iterator;
 import java.util.Properties;

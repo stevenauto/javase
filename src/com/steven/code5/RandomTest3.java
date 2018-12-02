@@ -1,4 +1,4 @@
-package com.steven.pattern.strategy;
+package com.steven.code5;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,10 +15,10 @@ import java.util.TreeMap;
  * 50]，统计每个数字出现的次数以及出现次数最多的数字与它的个数，最后将每个数字及其出现次数打印出来，如果某个数字出现次数为0
  * ，则不要打印它。打印时按照数字的升序排列
  * 
- * @author zhanglong
+ * @author steven
  * 
  */
-public class RandomTest
+public class RandomTest3
 {
 	public static void main(String[] args)
 	{

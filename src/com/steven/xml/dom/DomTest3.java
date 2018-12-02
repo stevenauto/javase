@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 
 /**
  * 使用递归解析给定的任意一个xml文档并且将其内容输出到命令行上
- * @author zhanglong
+ * @author steven
  *
  */
 public class DomTest3

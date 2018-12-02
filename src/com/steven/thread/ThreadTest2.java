@@ -26,27 +26,7 @@ public class ThreadTest2
 		
 		t2.start();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 }
 
