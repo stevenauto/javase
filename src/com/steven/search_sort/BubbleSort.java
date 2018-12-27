@@ -1,7 +1,11 @@
-package com.steven.code4;
-public class BubbleSortTest
+package com.steven.search_sort;
+public class BubbleSort implements SortInterface
 {
-	public static void bubbleSort(int[] array)
+	
+	public BubbleSort() {
+		
+	}
+	public void sort(int[] array)
 	{
 		for(int i = 0; i < array.length - 1; i++)
 		{
@@ -27,15 +31,5 @@ public class BubbleSortTest
 			System.out.println();
 
 		}
-	}
-
-
-
-	public static void main(String[] args)
-	{
-		int[] array = {4, 7, 8, 9, 3, 2};
-		
-		bubbleSort(array);
-			
 	}
 }
