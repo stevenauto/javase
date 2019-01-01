@@ -1,5 +1,8 @@
 package com.steven.pattern.decorator;
-
+/*
+ * Ïàµ±ÓÚbufferedoutputstream
+ * 
+ */
 public class ConcreteDecorator1 extends Decorator
 {
 	public ConcreteDecorator1(Component component)

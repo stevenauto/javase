@@ -11,6 +11,10 @@ public class DataStream1
 {
 	public static void main(String[] args) throws Exception
 	{
+		/*FileOutputStream是节点流可以直接和文件打交道，DataOutputStream和BufferedOutputStream
+		 * 是过滤流，buffered是为了缓冲(避免频繁的操作io设备)，data是为了支持java基本的过滤类型。
+		 * 
+		 */
 		DataOutputStream dos = new DataOutputStream(new BufferedOutputStream(
 				new FileOutputStream("data.txt")));
 

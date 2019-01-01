@@ -8,7 +8,8 @@ public class FileTest4
 	{
 		File file = new File("e:/cvs");
 		
-//		String[] names = file.list();与listFiles返回值一样，都是这个文件夹下的文件和目录。
+//		String[] names = file.list();与listFiles返回值一样，都是这个文件夹下的文件和目录，不会
+//		递归,就是说只打印一级目录，目录下的文件不显示。
 //		
 //		for(String name : names)
 //		{

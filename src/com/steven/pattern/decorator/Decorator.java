@@ -1,5 +1,8 @@
 package com.steven.pattern.decorator;
-
+/*
+ * Ïàµ±ÓÚfilteroutputstream
+ * 
+ */
 public class Decorator implements Component
 {
 	private Component component;
