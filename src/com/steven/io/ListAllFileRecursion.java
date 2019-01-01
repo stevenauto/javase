@@ -3,7 +3,7 @@ package com.steven.io;
 import java.io.File;
 import java.util.ArrayList;
 
-public class ListAllTest
+public class ListAllFileRecursion
 {
 	//用于判断目录或文件所处的层次
 	private static int time;

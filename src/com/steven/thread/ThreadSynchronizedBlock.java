@@ -1,6 +1,6 @@
 package com.steven.thread;
 
-public class ThreadTest5
+public class ThreadSynchronizedBlock
 {
 	public static void main(String[] args)
 	{

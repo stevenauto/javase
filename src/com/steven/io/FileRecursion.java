@@ -2,7 +2,7 @@ package com.steven.io;
 
 import java.io.File;
 
-public class FileTest9
+public class FileRecursion
 {
 	public static void deleteAll(File file)
 	{
@@ -19,6 +19,7 @@ public class FileTest9
 			
 			for(File f : files)
 			{
+				//先删除内容再删除自己
 				deleteAll(f);
 				
 				f.delete();

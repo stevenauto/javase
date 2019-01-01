@@ -1,6 +1,6 @@
 package com.steven.io;
 
-public class Fab
+public class Fibonacci
 {
 	//使用递归计算斐波纳契数列
 	public int compute(int n)
@@ -18,7 +18,7 @@ public class Fab
 	
 	public static void main(String[] args)
 	{
-		Fab fab = new Fab();
+		Fibonacci fab = new Fibonacci();
 		
 		System.out.println(fab.compute(9));
 	}
