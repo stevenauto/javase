@@ -1,4 +1,4 @@
-package com.steven.thread;
+package com.steven.thread.waitnotify;
 
 public class MainTest
 {
@@ -10,11 +10,11 @@ public class MainTest
 		Thread t2 = new DecreaseThread(sample);
 		
 		Thread t3 = new IncreaseThread(sample);
-//		Thread t4 = new DecreaseThread(sample);
+		Thread t4 = new DecreaseThread(sample);
 		
 		t1.start();
 		t2.start();
 		t3.start();
-//		t4.start();
+		t4.start();
 	}
 }

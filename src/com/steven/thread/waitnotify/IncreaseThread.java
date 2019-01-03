@@ -1,4 +1,4 @@
-package com.steven.thread;
+package com.steven.thread.waitnotify;
 
 public class IncreaseThread extends Thread
 {

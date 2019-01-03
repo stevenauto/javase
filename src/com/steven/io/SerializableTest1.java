@@ -50,6 +50,7 @@ class Person implements Serializable
 	int age;
 
 	String name;
+	
 
 	double height;
 
