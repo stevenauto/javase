@@ -1,6 +1,6 @@
 package com.steven.clone;
 
-public class CloneTest2
+public class DeepClone
 {
 	public static void main(String[] args) throws Exception
 	{

@@ -1,6 +1,6 @@
 package com.steven.clone;
 
-public class CloneTest1
+public class ShallowClone
 {
 	public static void main(String[] args) throws Throwable
 	{

@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class CloneTest3
+public class DeepCloneByteArray
 {
 	public static void main(String[] args) throws Exception
 	{
