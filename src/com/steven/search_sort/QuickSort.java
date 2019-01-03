@@ -2,42 +2,40 @@ package com.steven.search_sort;
 
 public class QuickSort implements SortInterface{
 	
+
 	public QuickSort() {
-		
+
 	}
 	
 	public void sort(int[] array) {
-		
-		quick(array,0,array.length);
-	}
+		quicksort(array,0,array.length-1);
 	
-	public void quick(int[] array,int low,int high) {
-		if(low < high) {
-			int middle=partition(array,low,high);
-			quick(array,low,middle-1);
-			quick(array,middle+1,high);
+	}
+	public void quicksort(int[] array,int low,int high) {
+		if(low<high) {
+			int start=low;
+			int end=high;
+			int key=array[start];
+			while(start<end) {
+				while(start<end && array[end]>=key ) {
+					end--;
+				}
+				
+				array[start]=array[end];
+				
+				while(start<end && array[start]<=key) {
+					start++;
+				}
+				array[end]=array[start];
+			}
+			array[start]=key;
+			quicksort(array,low,start-1);
+			quicksort(array,start+1,high);
 		}
 	}
 	
-	private int partition(int[] array,int low,int high) {
-		
-		int seed=array[low];
-		while(low < high) {
-			
-			while(low<high && array[low]<=seed) {
-				low++;
-			}
-			array[low] = array[high];
-			
-			while(low<high && array[high]>=seed) {
-				high--;
-			}
-			array[high]=seed;
-			low=high;
-			
-		}
-		return low;
-		
-	}
+	
 
 }
+
+	

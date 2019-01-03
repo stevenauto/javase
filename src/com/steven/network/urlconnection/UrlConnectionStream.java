@@ -12,9 +12,10 @@ public class UrlConnectionStream
 	{
 		URL url = new URL("http://www.csdn.net");
 		
-//		URLConnection conn = url.openConnection();
-//		
-//		InputStream is = conn.getInputStream();
+/*		URLConnection conn = url.openConnection();
+	   	InputStream is = conn.getInputStream();
+	   	url.openStream also call above method
+*/
 		
 		InputStream is = url.openStream();
 		

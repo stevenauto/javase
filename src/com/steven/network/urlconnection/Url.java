@@ -2,7 +2,7 @@ package com.steven.network.urlconnection;
 
 import java.net.URL;
 
-public class Url1
+public class Url
 {
 	public static void main(String[] args) throws Exception
 	{
