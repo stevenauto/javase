@@ -1,6 +1,6 @@
 package com.steven.io;
 
-public class Test1
+public class Recursion
 {
 	//循环方式计算阶乘，又叫做迭代方式
 	public int compute(int number)
@@ -33,7 +33,7 @@ public class Test1
 	
 	public static void main(String[] args)
 	{
-		Test1 test = new Test1();
+		Recursion test = new Recursion();
 		
 		System.out.println(test.compute(5));
 		

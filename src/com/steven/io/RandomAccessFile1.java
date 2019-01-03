@@ -1,7 +1,10 @@
 package com.steven.io;
 
 import java.io.RandomAccessFile;
-
+/*RandomAccessFile实现了datainputstream和dataoutputstream
+ * 
+ * 
+ */
 public class RandomAccessFile1
 {
 	public static void main(String[] args) throws Exception

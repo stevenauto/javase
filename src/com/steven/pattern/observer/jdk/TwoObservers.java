@@ -1,4 +1,4 @@
-package com.steven.pattern.observer;
+package com.steven.pattern.observer.jdk;
 
 import java.util.Observable;
 import java.util.Observer;

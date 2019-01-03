@@ -1,6 +1,6 @@
 package com.steven.thread;
 
-public class ThreadTest2
+public class ThreadRunnable
 {
 	public static void main(String[] args)
 	{

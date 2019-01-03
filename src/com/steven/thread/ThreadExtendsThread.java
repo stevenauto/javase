@@ -1,6 +1,8 @@
 package com.steven.thread;
-
-public class ThreadTest
+/*Thread 类也实现了runable接口
+ * 
+ */
+public class ThreadExtendsThread
 {
 	public static void main(String[] args)
 	{

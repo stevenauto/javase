@@ -9,7 +9,7 @@ public class OverloadTest
 
 	public int add(int a, int b, int c)
 	{
-		System.out.println(add(a, b));
+		System.out.println("the result is:"+add(a, b));
 
 		return a + b + c;
 	}

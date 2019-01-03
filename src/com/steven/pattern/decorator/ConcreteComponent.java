@@ -1,5 +1,9 @@
 package com.steven.pattern.decorator;
 
+/*
+ * Ïàµ±ÓÚfileoutputstream
+ * 
+ */
 public class ConcreteComponent implements Component
 {
 	@Override

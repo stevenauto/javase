@@ -66,8 +66,14 @@ class Person2 implements Serializable
 	 */
 	private void writeObject(java.io.ObjectOutputStream out) throws IOException
 	{
+		/* 既然你提供了writeobject和readobject你就必须处理它，不处理会给变量赋初始值
+		 * age=0,name=ull,height=0.0,并且read write 的顺序一定。write int,write
+		 * utf,write double
+		 *
+		 */
 		out.writeInt(age);
 		out.writeUTF(name);
+		out.writeDouble(height);
 		
 		System.out.println("write object");
 	}
@@ -77,6 +83,7 @@ class Person2 implements Serializable
 	{
 		age = in.readInt();
 		name = in.readUTF();
+		height = in.readDouble();
 		
 		System.out.println("read object");
 	}
