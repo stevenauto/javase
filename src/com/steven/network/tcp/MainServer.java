@@ -11,6 +11,7 @@ public class MainServer
 		
 		while(true)
 		{
+			//accept也是阻塞
 			Socket socket = serverSocket.accept();
 			
 			//启动读写线程

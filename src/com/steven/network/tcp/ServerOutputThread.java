@@ -24,6 +24,9 @@ public class ServerOutputThread extends Thread
 
 			while(true)
 			{
+				/*InputStreamReader是字符流与字节流之间的桥梁
+				 * 同样它也是阻塞的方法一直等到有数据才执行
+				 */
 				BufferedReader reader = new BufferedReader(new InputStreamReader(
 						System.in));
 				
