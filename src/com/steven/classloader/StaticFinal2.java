@@ -2,7 +2,7 @@ package com.steven.classloader;
 
 import java.util.Random;
 
-class FinalTest
+class FinalTest2
 {
 	/**不会输出FinalTest static block，因为x是一个编译时的常量，System.out.println(FinalTest.x);
 	 * 不会导致类FinalTest被加载。
@@ -11,18 +11,18 @@ class FinalTest
 	 * 也就是说如果x是一个编译时的常量他就对类初始化，如果不是常量就会对类初始化。
 	 * 
 	 */
-	public static final int x = 6 / 3;
+	public static final int x = new Random().nextInt(100);
 	
 	static
 	{
-		System.out.println("FinalTest static block");
+		System.out.println("FinalTest2 static block");
 	}
 }
 
-public class Test2
+public class StaticFinal2
 {
 	public static void main(String[] args)
 	{
-		System.out.println(FinalTest.x);
+		System.out.println(FinalTest2.x);
 	}
 }

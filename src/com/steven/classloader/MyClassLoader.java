@@ -43,7 +43,7 @@ public class MyClassLoader extends ClassLoader
 		this.path = path;
 	}
 	/**必须重写findClass因为默认抛出异常。
-	 * 
+	 * 将loadclassdata获得的字节数组转换成class对象。
 	 */
 	@Override
 	public Class<?> findClass(String name) throws ClassNotFoundException
@@ -52,7 +52,9 @@ public class MyClassLoader extends ClassLoader
 		
 		return this.defineClass(name, data, 0, data.length);
 	}
-	
+	/*这个方法获得了class的字节数组
+	 * 
+	 */
 	private byte[] loadClassData(String name)
 	{
 		InputStream is = null;
@@ -98,6 +100,7 @@ public class MyClassLoader extends ClassLoader
 	
 	public static void main(String[] args) throws Exception
 	{
+		//load1的父加载器是system类加载器
 		MyClassLoader loader1 = new MyClassLoader("loader1");
 		
 		loader1.setPath("d:\\myapp\\serverlib");

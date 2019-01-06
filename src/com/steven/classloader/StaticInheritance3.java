@@ -23,7 +23,7 @@ class Child3 extends Parent3
 	}
 }
 
-public class Test6
+public class StaticInheritance3
 {
 	public static void main(String[] args)
 	{

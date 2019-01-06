@@ -8,7 +8,7 @@ class CL
 	}
 }
 
-public class Test7
+public class loadClass
 {
 	public static void main(String[] args) throws Exception
 	{ 

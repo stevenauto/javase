@@ -20,7 +20,7 @@ class Child extends Parent
 	}
 }
 
-public class Test4
+public class StaticInheritance
 {
 	static
 	{
