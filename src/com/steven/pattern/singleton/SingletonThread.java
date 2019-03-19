@@ -1,15 +1,15 @@
 package com.steven.pattern.singleton;
 
-public class Singleton
+public class SingletonThread
 {
-	private static Singleton singleton;
+	private static SingletonThread singleton;
 	
-	private Singleton()
+	private SingletonThread()
 	{
 
 	}
 
-	public static Singleton getInstance()
+	public static SingletonThread getInstance()
 	{
 		if (null == singleton)
 		{
@@ -22,7 +22,7 @@ public class Singleton
 				e.printStackTrace();
 			}
 
-			singleton = new Singleton();
+			singleton = new SingletonThread();
 		}
 
 		return singleton;
@@ -42,7 +42,7 @@ class MyThread extends Thread
 	@Override
 	public void run()
 	{
-		System.out.println(Singleton.getInstance());
+		System.out.println(SingletonThread.getInstance());
 	}
 }
 

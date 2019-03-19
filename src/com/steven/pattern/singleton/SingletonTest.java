@@ -1,4 +1,4 @@
-package com.steven.code3;
+package com.steven.pattern.singleton;
 public class SingletonTest
 {
 	public static void main(String[] args)
