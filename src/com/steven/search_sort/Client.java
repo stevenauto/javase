@@ -18,6 +18,7 @@ public class Client {
 		for(int i=0; i<array.length;i++) {
 			System.out.print(array[i]+" ");
 		}
+		
 		BinarySearch bs = new BinarySearch();
 		int key=88;
 		int index=bs.binarysearch(array, key, 0, array.length-1);

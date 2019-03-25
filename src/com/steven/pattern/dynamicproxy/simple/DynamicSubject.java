@@ -43,19 +43,4 @@ public class DynamicSubject implements InvocationHandler
 		
 		return null;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
