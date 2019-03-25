@@ -3,8 +3,8 @@ package com.steven.code1;
 public class Child extends Parent
 {
 	public Child()
-	{
-		
+	{	
+//		invoke constructor with parameter,super必须发在第一个位置
 		super(1);
 		System.out.println("child");
 	}

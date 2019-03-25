@@ -1,5 +1,7 @@
 package com.steven.search_sort;
 
+import java.util.Arrays;
+
 public class Client {
 
 	public static void main(String[] args) {
@@ -12,17 +14,19 @@ public class Client {
 //		for(int i=0; i<array.length;i++) {
 //			System.out.print(array[i]+" ");
 //		}
-		QuickSort qs = new QuickSort();
+		/*QuickSort qs = new QuickSort();
 		env.SetSortInterface(qs);
+		env.sort(array);*/
+		System.out.println("Input: " + Arrays.toString(array));
+		MaxHeap mh =new MaxHeap();
+		env.SetSortInterface(mh);
 		env.sort(array);
-		for(int i=0; i<array.length;i++) {
-			System.out.print(array[i]+" ");
-		}
+		System.out.println("Output: " + Arrays.toString(array));
 		
-		BinarySearch bs = new BinarySearch();
+		/*BinarySearch bs = new BinarySearch();
 		int key=88;
 		int index=bs.binarysearch(array, key, 0, array.length-1);
-		System.out.println("index is:"+index);
+		System.out.println("index is:"+index);*/
 
 	}
 
