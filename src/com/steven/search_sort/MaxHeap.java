@@ -3,6 +3,7 @@ package com.steven.search_sort;
 import java.util.Arrays;
 
 public class MaxHeap implements SortInterface {
+	
 	protected int array[];
 	protected int heapsize;
 
@@ -10,10 +11,7 @@ public class MaxHeap implements SortInterface {
 	public MaxHeap() {
 	}
 
-	/*
-	 * parent/left child/right child
-	 * 
-	 */
+	/* parent/left child/right child	 */
 	protected int parent(int i) {
 		return (i - 1) / 2;
 	}
@@ -26,10 +24,7 @@ public class MaxHeap implements SortInterface {
 		return 2 * i + 2;
 	}
 
-	/*
-	 * 保持最大堆特性
-	 * 
-	 */
+	/* 保持最大堆特性 */
 	protected void maxHeapify(int i) {
 		int l = left(i);
 		int r = right(i);
@@ -76,16 +71,6 @@ public class MaxHeap implements SortInterface {
 	public void sort(int[] array) {
 		// TODO Auto-generated method stub
 		heapsort(array);
-
-	}
-
-	public static void main(String[] args) {
-		// a sample input
-		int[] A = { 3, 7, 2, 11, 3, 4, 9, 2, 18, 0 };
-		System.out.println("Input: " + Arrays.toString(A));
-		MaxHeap maxhp = new MaxHeap();
-		maxhp.heapsort(A);
-		System.out.println("Output: " + Arrays.toString(A));
 
 	}
 
