@@ -1,6 +1,8 @@
-package com.steven.search_sort;
+package com.steven.search_sort.choose;
 
 import java.util.Arrays;
+
+import com.steven.search_sort.SortInterface;
 
 public class MaxHeap implements SortInterface {
 	
@@ -24,7 +26,7 @@ public class MaxHeap implements SortInterface {
 		return 2 * i + 2;
 	}
 
-	/* ±£³Ö×î´ó¶ÑÌØÐÔ */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	protected void maxHeapify(int i) {
 		int l = left(i);
 		int r = right(i);
@@ -43,7 +45,7 @@ public class MaxHeap implements SortInterface {
 	}
 
 	/*
-	 * ¹¹ÔìÒ»¸ö¡°×î´ó¶Ñ¡±£º
+	 * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½
 	 */
 	public void buildMaxHeap(int[] array) {
 		this.array = array;

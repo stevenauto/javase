@@ -1,4 +1,7 @@
-package com.steven.search_sort;
+package com.steven.search_sort.swap;
+
+import com.steven.search_sort.SortInterface;
+
 public class BubbleSort implements SortInterface
 {
 	
@@ -21,7 +24,7 @@ public class BubbleSort implements SortInterface
 				
 			}
 
-			System.out.println("╣з" + (i + 1) + "лкеепР");
+			System.out.println("О©╫О©╫" + (i + 1) + "О©╫О©╫О©╫О©╫О©╫О©╫");
 
 			for(int k = 0; k < array.length; k++)
 			{

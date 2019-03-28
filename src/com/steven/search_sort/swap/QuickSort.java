@@ -1,4 +1,6 @@
-package com.steven.search_sort;
+package com.steven.search_sort.swap;
+
+import com.steven.search_sort.SortInterface;
 
 public class QuickSort implements SortInterface
 {
@@ -39,7 +41,7 @@ public class QuickSort implements SortInterface
 			/*
 			 * start=end
 			 */
-			array[start] = key;
+			array[end] = key;
 			quicksort(array, low, start - 1);
 			quicksort(array, start + 1, high);
 		}
