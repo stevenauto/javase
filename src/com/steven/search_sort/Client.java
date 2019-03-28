@@ -11,6 +11,8 @@ public class Client {
 	public static void main(String[] args) {
 		
 		int array[] = {44,22,2,32,54,22,88,77,99,11};
+		//radix sort only for 4 digit
+		int radixarray[] = {4421,2211,2324,32124,5412,2212,8816,7723,2112,1112};
 		Environment env = new Environment();
 //Simple Sort implements that include BubbleSort,ChooseSort,InsertSort		
 		
@@ -37,10 +39,14 @@ public class Client {
 		env.SetSortInterface(ss);
 		env.sort(array);*/
 		
-		MergeSort ms = new MergeSort();
+		/*MergeSort ms = new MergeSort();
 		env.SetSortInterface(ms);
 		env.sort(array);
-		System.out.println(Arrays.toString(array));
+		System.out.println(Arrays.toString(array));*/
+		
+		RadixSortfixlength rs= new RadixSortfixlength();
+		env.SetSortInterface(rs);
+		env.sort(radixarray);
 		
 /*		System.out.println("Input: " + Arrays.toString(array));
 		MaxHeap mh =new MaxHeap();
