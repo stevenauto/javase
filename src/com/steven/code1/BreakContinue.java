@@ -1,4 +1,4 @@
-package com.steven.code1;
+package steven.code1;
 
 public class BreakContinue
 {

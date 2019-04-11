@@ -12,7 +12,7 @@ public class FinalTest2
 class G
 {
 	/*
-	 * finalÀàµÄ·½·¨²»ÄÜÖØÐ´
+	 * finalï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 	 */
 	public final void output()
 	{
@@ -22,7 +22,7 @@ class G
 
 class H extends G
 {
-	public void output()
+	//public void output()
 	{
 		System.out.println("H");
 	}

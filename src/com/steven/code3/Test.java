@@ -1,5 +1,6 @@
-package com.steven.code3;
-public abstract final class Test
+package steven.code3;
+/*public abstract final class Test
 {
 	
 }
+*/
