@@ -6,7 +6,7 @@ public class SimpleEmbedded {
 	   public static void main(String[] args) throws PyException {
 	        
 	        // Java
-	        inc.steven.Jython.EmployeeType eType = (EmployeeType) JythonFactory.getInstance().getJavaObjectFromJythonFile("inc.steven.Jython.EmployeeType", "C:/Users/aruba/workspace/javase/Employee.py");
+	        EmployeeType eType = (EmployeeType) JythonFactory.getInstance().getJavaObjectFromJythonFile("EmployeeType", "C:/Users/aruba/workspace/javase/Employee.py");
 	        System.out.println("Employee Name is: " + eType.getEmployeeFirst() + " " + eType.getEmployeeLast());
 	        System.out.println("Employee ID is: " + eType.getEmployeeId());
 	        
