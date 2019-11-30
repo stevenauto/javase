@@ -1,7 +1,5 @@
 package com.steven.pattern.dynamicproxy.cglib;
 
-import com.steven.cglib.BookFacadeCglib;
-
 public class Client {
 	public static void main(String[] args) {      
         BookFacadeImpl1 bookFacade=new BookFacadeImpl1();
