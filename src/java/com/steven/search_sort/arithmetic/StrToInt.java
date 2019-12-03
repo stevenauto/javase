@@ -28,7 +28,6 @@ public class StrToInt {//把一个字符串转换成int类型，比如“123” 
             return 0;
         }
     }
-
     public static int core(String num, char flag){
         int i=0;
         if(flag == '+' || flag == '-'){

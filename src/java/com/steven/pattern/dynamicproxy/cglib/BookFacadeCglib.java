@@ -28,5 +28,11 @@ public class BookFacadeCglib implements MethodInterceptor{
 		System.out.println("After call method");
 		return null;
 	}
+	public static void main(String[] args) {
+		BookFacadeImpl1 bookFacade=new BookFacadeImpl1();
+		BookFacadeCglib cglib=new BookFacadeCglib();
+		BookFacadeImpl1 bookCglib=(BookFacadeImpl1)cglib.getInstance(bookFacade);
+		bookCglib.addBook();
+	}
 
 }

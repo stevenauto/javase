@@ -3,11 +3,11 @@ package com.steven.search_sort.arithmetic;
  a seq list increment first and then decrement ,find peak number
  */
 
-class Peakseq {
+class Peaknum {
 
     public static void main(String[] args){
         int data[] = new int[]{1,3,5,7,8,11,9,6,5,3,0};
-        Peakseq pq =new Peakseq();
+        Peaknum pq =new Peaknum();
         int peaknum = pq.findPeakElement(data);
         System.out.println("The peak number is :"+peaknum);
     }

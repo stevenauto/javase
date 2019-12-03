@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 /*
 给定一个字符串s，请计算输出含有连续两个s作为子串的最短字符串。注意两个s可能有重叠部分。例如，"ababa"含有两个"aba"。
-
  */
 public class kmp {
 

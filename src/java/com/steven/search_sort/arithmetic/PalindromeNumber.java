@@ -4,24 +4,7 @@ package com.steven.search_sort.arithmetic;
 import java.util.Scanner;
 
 public class PalindromeNumber {
-
-    public static void main(String[] args) {
-
-        String str = "abcacba";
-        int number = 1233210;
-        if(isPalindrome(number)){
-            System.out.println("The number is palindromernumber: "+number);
-        }else if(isPalindrome(str)){
-            System.out.println("The String is palindrome String: "+str);
-        } else{
-            System.out.println("What you input is not plindrome number or string");
-        }
-
-    }
-
     /**
-     * 判断是否n是回文数
-     * @param n
      * @return 如果是返回true，否则返回false
      */
     public static boolean isPalindrome(int n) {
@@ -41,10 +24,7 @@ public class PalindromeNumber {
     public static void isPalindrome(Object obj){
         String str= (int)obj+"";
         isPalindrome(str);
-
-
     }
-
     public static boolean isPalindrome(String str) {
         StringBuffer sb = new StringBuffer(str);
         sb.reverse();// 把字符串反转
@@ -60,6 +40,17 @@ public class PalindromeNumber {
               return false;
         }
 
+    }
+    public static void main(String[] args) {
+        String str = "abcacba";
+        int number = 1233210;
+        if(isPalindrome(number)){
+            System.out.println("The number is palindromernumber: "+number);
+        }else if(isPalindrome(str)){
+            System.out.println("The String is palindrome String: "+str);
+        } else{
+            System.out.println("What you input is not plindrome number or string");
+        }
     }
 
 }
