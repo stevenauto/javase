@@ -4,7 +4,8 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
- * 实现动态代理，二个注意事项，第一个一定要实现InvocationHandler接口，这个方法是用来转给newProxyInstance的
+ * 实现动态代理，二个注意事项，第一个一定要实现InvocationHandler接口，
+ * 这个方法是用来转给newProxyInstance的
  * 最后一个参数
  * @author root
  *

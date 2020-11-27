@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/interview/ExpectSumOfTwoNumber.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/pattern/decorator/Client.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/pattern/dynamicproxy/proxyvector/VectorProxy.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/pattern/dynamicproxy/simple/Client.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/pattern/proxy/ProxySubject.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/java/com/steven/xml/jdom/JDomTest1.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

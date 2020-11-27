@@ -24,7 +24,7 @@ public class BubbleSort implements SortInterface
 				
 			}
 
-			System.out.println("��" + (i + 1) + "������");
+			System.out.println("This is " + (i + 1) + " round seq");
 
 			for(int k = 0; k < array.length; k++)
 			{

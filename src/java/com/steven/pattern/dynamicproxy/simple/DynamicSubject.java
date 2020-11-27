@@ -24,8 +24,8 @@ public class DynamicSubject implements InvocationHandler
 	{
 		this.sub = obj;
 	}
-	/**处理代理实例上的方法调用并把结果返回来，当我们调用一个方法的时候并不是由代理来完成而是由代理的
-	 * InvocationHandler的invoke方法帮助完成。
+	/**处理代理实例上的方法调用并把结果返回来，当我们调用一个方法的时候并不是由代理来完成而是由
+	 * 代理的InvocationHandler的invoke方法帮助完成。
 	 * Object proxy（调用那一个代理实例的方法）Method method（method实例对应于代理实例上的被
 	 * 调用的方法）Object[] args是方法所需要的参数
 	 *
